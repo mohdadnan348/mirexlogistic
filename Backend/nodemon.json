@@ -1,0 +1,22 @@
+{
+  "watch": ["src"],
+  "ext": "ts,json",
+  "ignore": [
+    "node_modules/**",
+    "dist/**",
+    "logs/**",
+    "uploads/**",
+    "storage/**",
+    "coverage/**",
+    "*.log"
+  ],
+  "exec": "tsx src/server.ts",
+  "delay": "300",
+  "legacyWatch": false,
+  "signal": "SIGTERM",
+  "verbose": false,
+  "restartable": "rs",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
